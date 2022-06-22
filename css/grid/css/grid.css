@@ -1,0 +1,21 @@
+body {
+    display: grid;
+    grid: auto-flow min-content / repeat(12, 1fr);
+    grid-gap: 1em;
+}
+
+header, footer {
+    grid-column: 1 / -1;
+}
+
+aside, nav {
+    grid-column: 1 / 5;
+}
+
+main {
+    grid-area: 2 / 5 / 4 / 13;
+}
+
+body > img {
+    grid-column: span 3;
+}
